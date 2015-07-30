@@ -1,0 +1,14 @@
+## Constantly display the cursor position in the status bar.
+set const
+
+## Text will scroll line-by-line, instead of the usual chunk-by-chunk behavior.
+set smooth
+
+## Indent new lines to the previous line’s indentation.
+set autoindent
+
+## Remove the blank line below the titlebar.
+set morespace
+
+## Convert typed tabs to spaces.
+set tabstospaces
