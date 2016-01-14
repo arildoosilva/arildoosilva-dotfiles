@@ -1,15 +1,8 @@
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
 
-<<<<<<< HEAD:vimrc
 " Enhanced tab completion
 set wildmenu
-=======
-" File types
-filetype on
-filetype plugin on
-filetype indent on
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Reload files changed outside of vim
 set autoread
@@ -92,39 +85,24 @@ set noswapfile
 " https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
-<<<<<<< HEAD:vimrc
 call pathogen#helptags()
-=======
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Settings for vim-powerline
 " cd ~/.vim/bundle
 " git clone https://github.com/Lokaltog/vim-powerline.git
-<<<<<<< HEAD:vimrc
 " set laststatus=2
-=======
-set laststatus=2
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Settings for ctrlp
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim.git
-<<<<<<< HEAD:vimrc
 " let g:ctrlp_max_height = 30
 " set wildignore+=*.pyc
 " set wildignore+=*_build/*
 " set wildignore+=*/coverage/*
-=======
-let g:ctrlp_max_height = 30
-set wildignore+=*.pyc
-set wildignore+=*_build/*
-set wildignore+=*/coverage/*
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Settings for jedi-vim
 " cd ~/.vim/bundle
 " git clone https://github.com/davidhalter/jedi-vim.git
-<<<<<<< HEAD:vimrc
 " let g:jedi#usages_command = "<leader>z"
 " let g:jedi#popup_on_dot = 0
 " let g:jedi#popup_select_first = 0
@@ -146,38 +124,11 @@ set wildignore+=*/coverage/*
 
 " inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
 " inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
-=======
-let g:jedi#usages_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-" Better navigating through omnicomplete option list
-" See http://stackoverflow.com/questions/2170023/how-to-map-keys-for-popup-menu-in-vim
-set completeopt=longest,menuone
-function! OmniPopup(action)
-    if pumvisible()
-        if a:action == 'j'
-            return "\<C-N>"
-        elseif a:action == 'k'
-            return "\<C-P>"
-        endif
-    endif
-    return a:action
-endfunction
-
-inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
-inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Python folding mkdir -p ~/.vim/ftplugin wget -O
 " ~/.vim/ftplugin/python_editing.vim
 " http://www.vim.org/scripts/download_script.php?src_id=5492
-<<<<<<< HEAD:vimrc
 " set nofoldenable
-=======
-set nofoldenable
->>>>>>> d81d515d17edff62ac69be414db2ad300216f858:.vimrc
 
 " Surround
 " Surround.vim is all about surrounding sparentheses, brackets, quotes, XML
